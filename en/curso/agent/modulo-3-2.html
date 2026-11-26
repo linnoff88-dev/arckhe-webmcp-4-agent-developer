@@ -34,7 +34,7 @@
         },
         {
           "id": "3-2",
-          "title": "Execução de ferramentas",
+          "title": "Execuçêo de ferramentas",
           "topics": 6,
           "href": "https://inematds.github.io/webmcp-4-agent-developer/curso/agent/modulo-3-2.html"
         },
@@ -387,7 +387,7 @@ if (!result.ok) return fail("INVALID_ARGUMENTS", result.errors);</code></pre>
 <pre class="code-shell"><code>const signal = AbortSignal.any([turn.signal, AbortSignal.timeout(10_000)]);
 const tools = await document.modelContext.getTools();
 const tool = tools.find((item) =&gt; item.name === proposal.name);
-if (!tool) throw new Error("Tool não está mais disponível");
+if (!tool) throw new Error("Tool nêo está mais disponível");
 return document.modelContext.executeTool(tool, proposal.arguments, { signal });</code></pre>
 </div>
 <div class="space-y-3 min-w-0">
